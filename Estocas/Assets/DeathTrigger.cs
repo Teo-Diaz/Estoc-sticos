@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Asegúrate de incluir esto para trabajar con UI
+using UnityEngine.UI;
 
 public class DeathTrigger : MonoBehaviour
 {
@@ -9,18 +9,13 @@ public class DeathTrigger : MonoBehaviour
     public Button actionButton; // Referencia al botón de la UI
     [Range(0, 100)] // Esto permitirá que se ajuste en el Inspector de Unity
     public int deathProbability = 50; // Probabilidad de muerte (0% a 100%)
-    public int multiplicador = 2; // Multiplicador de ganancias
+    public float multiplicador = 1.5f; // Multiplicador de ganancias
+
 
     private System.Random random = new System.Random();
 
-    // Diccionario para almacenar el puntaje inicial de cada jugador
-    private Dictionary<string, int> playerScores = new Dictionary<string, int>
-    {
-        { "P1", 1000 },
-        { "P2", 1000 },
-        { "P3", 1000 },
-        { "P4", 1000 }
-    };
+    // Referencia a PlayerScoreUI para actualizar puntajes
+    public PlayerScoreUI playerScoreUI;
 
     private void Start()
     {
@@ -50,10 +45,10 @@ public class DeathTrigger : MonoBehaviour
                 int chance = random.Next(0, 100); // Genera un número aleatorio entre 0 y 99
 
                 // Compara la probabilidad de muerte con el valor aleatorio generado
+                string playerTag = LayerMask.LayerToName(playerLayer);
                 if (chance < deathProbability)
                 {
-                    // El jugador muere, reposicionar
-                    string playerTag = LayerMask.LayerToName(playerLayer);
+                    // El jugador muere, reposicionar y restar tarifa
                     int playerIndex = GetPlayerIndex(playerTag); // Obtiene el índice de spawn correspondiente
 
                     if (playerIndex >= 0 && playerIndex < SpawnPlayers.Count)
@@ -61,27 +56,31 @@ public class DeathTrigger : MonoBehaviour
                         // Reposicionar al jugador en su Spawn correspondiente
                         collider.transform.position = SpawnPlayers[playerIndex].position;
 
-                        // Quitar 100 puntos al jugador
-                        if (playerScores.ContainsKey(playerTag))
-                        {
-                            playerScores[playerTag] -= 100;
-                            Debug.Log(playerTag + " ha sido reposicionado a su Spawn y se le han quitado 100 puntos. Puntos restantes: " + playerScores[playerTag]);
-                        }
+                        // Aumentar la tarifa en 100
+                        playerScoreUI.tarifa += 100; // Aumenta la tarifa en 100
+                        playerScoreUI.UpdateTarifaUI(); // Actualiza la UI de la tarifa
+                        playerScoreUI.UpdateScore(playerTag, -playerScoreUI.tarifa); // Resta 100 puntos por la tarifa
+                        Debug.Log(playerTag + " ha sido reposicionado a su Spawn y se le ha restado la tarifa.");
                     }
                 }
                 else
                 {
-                    // Si no muere, multiplica sus puntos por el multiplicador
-                    string playerTag = LayerMask.LayerToName(playerLayer);
-                    if (playerScores.ContainsKey(playerTag))
+                    // Si no muere y tiene más de 0 puntos, multiplica sus puntos por el multiplicador
+                    if (playerScoreUI.GetPlayerScore(playerTag) > 0)
                     {
-                        playerScores[playerTag] *= multiplicador; // Multiplica los puntos por el multiplicador
-                        Debug.Log(playerTag + " ha sobrevivido y sus puntos han sido multiplicados. Puntos totales: " + playerScores[playerTag]);
+                        int scoreChange = Mathf.FloorToInt(playerScoreUI.GetPlayerScore(playerTag) * (multiplicador - 1)); // Calcula el cambio de puntaje
+                        playerScoreUI.UpdateScore(playerTag, scoreChange); // Actualiza el puntaje
+                        Debug.Log(playerTag + " ha sobrevivido y sus puntos han sido multiplicados.");
+                    }
+                    else
+                    {
+                        Debug.Log(playerTag + " está descalificado y no recibe bonificaciones.");
                     }
                 }
             }
         }
     }
+
 
     // Método para obtener el índice de spawn del jugador basado en su capa
     private int GetPlayerIndex(string playerTag)

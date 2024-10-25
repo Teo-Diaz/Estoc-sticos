@@ -85,4 +85,20 @@ public class Stepmovement : MonoBehaviour
     {
         canMove = true;  // Permitir que los jugadores vuelvan a moverse
     }
+
+    // Método para deshabilitar el movimiento de un jugador
+    public void DisableMovement()
+    {
+        // Si el jugador actual es el que se descalificó, no permitir que se mueva
+        if (Players[currentObjectIndex].gameObject.activeSelf) // Asegúrate de que el jugador esté activo
+        {
+            Players[currentObjectIndex].gameObject.SetActive(false); // Desactiva el objeto para simular descalificación
+        }
+    }
+
+    // Método para verificar si el objeto de movimiento corresponde al jugador
+    public bool IsPlayer(string playerTag)
+    {
+        return Players[currentObjectIndex].tag == playerTag; // Verifica el tag del jugador
+    }
 }
