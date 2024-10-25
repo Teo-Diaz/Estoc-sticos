@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 0
   multiplicador: 2
@@ -631,10 +631,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
@@ -785,10 +785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
@@ -939,10 +939,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
@@ -1153,7 +1153,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 978025764}
   m_Father: {fileID: 1729741972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &389785062
@@ -1397,10 +1398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -1551,16 +1552,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
   deathProbabilities: 
   playerScoreUI: {fileID: 1391858807}
   probabilityCanvas: {fileID: 1518465504}
+--- !u!1 &476952872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476952873}
+  m_Layer: 0
+  m_Name: Spawn3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476952873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476952872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.203, y: -0.278, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1987294718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &490922596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,10 +2093,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
@@ -2146,7 +2178,8 @@ Transform:
   m_LocalPosition: {x: -3.3000002, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1894699251}
   m_Father: {fileID: 1729741972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &872696288
@@ -2420,6 +2453,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &978025763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978025764}
+  m_Layer: 0
+  m_Name: Spawn4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978025764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978025763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.252, y: -0.281, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389785061}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997540671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,10 +2628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -2718,10 +2782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 0
   multiplicador: 2
@@ -2907,10 +2971,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
@@ -3062,10 +3126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 0
   multiplicador: 2
@@ -3261,10 +3325,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 0
   multiplicador: 2
@@ -3861,10 +3925,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 0
   multiplicador: 2
@@ -4015,10 +4079,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
@@ -4641,10 +4705,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
@@ -5005,10 +5069,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
@@ -5338,10 +5402,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
@@ -5493,10 +5557,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -5813,16 +5877,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 50
   multiplicador: 2
   deathProbabilities: 
   playerScoreUI: {fileID: 1391858807}
   probabilityCanvas: {fileID: 1518465504}
+--- !u!1 &1698336154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698336155}
+  m_Layer: 0
+  m_Name: Spawn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698336155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698336154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.252, y: 0.226, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1945597164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703672152
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,10 +6062,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -6330,10 +6425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -6409,6 +6504,37 @@ Transform:
   - {fileID: 439923708}
   - {fileID: 1628995254}
   m_Father: {fileID: 1738970201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1894699250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894699251}
+  m_Layer: 0
+  m_Name: Spawn1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894699251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894699250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.219, y: 0.242, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 872696287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1908205391
 GameObject:
@@ -6574,7 +6700,8 @@ Transform:
   m_LocalPosition: {x: -2.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1698336155}
   m_Father: {fileID: 1729741972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1945597165
@@ -6818,10 +6945,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 20
   multiplicador: 2
@@ -6858,7 +6985,8 @@ Transform:
   m_LocalPosition: {x: -1.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 476952873}
   m_Father: {fileID: 1729741972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1987294719
@@ -7102,10 +7230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
@@ -7306,10 +7434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPlayers:
-  - {fileID: 1945597164}
-  - {fileID: 872696287}
-  - {fileID: 1987294718}
-  - {fileID: 389785061}
+  - {fileID: 1894699251}
+  - {fileID: 1698336155}
+  - {fileID: 476952873}
+  - {fileID: 978025764}
   actionButton: {fileID: 1641474051}
   deathProbability: 80
   multiplicador: 2
