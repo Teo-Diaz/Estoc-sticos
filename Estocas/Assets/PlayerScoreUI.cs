@@ -60,7 +60,7 @@ public class PlayerScoreUI : MonoBehaviour
     }
 
     // Método para actualizar la UI de los puntajes
-    private void UpdateScoreUI()
+    public void UpdateScoreUI()
     {
         scoreTextP1.text = "P1: " + playerScores["P1"].ToString();
         scoreTextP2.text = "P2: " + playerScores["P2"].ToString();
